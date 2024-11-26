@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<VBox spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.javafx2.HelloController">
+  <HBox alignment="CENTER" spacing="10" style="-fx-padding: 30 20 10 30">
+    <Button onAction="#drawCircle" text="Добавить круг"/>
+    <Button onAction="#drawRectangle" text="Добавить прямоугольник"/>
+  </HBox>
+  <HBox alignment="CENTER">
+    <StackPane>
+      <Canvas fx:id="canvas" width="900" height="600" />
+    </StackPane>
+  </HBox>
+</VBox>
